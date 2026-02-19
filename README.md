@@ -13,7 +13,7 @@
 
 ## Overview of Github Copilot in VS Code
 
-Github Copilot is the *AI Assitant* and the *LLM's* are supplied by:
+Github Copilot is the *AI Assistant* and the *LLM's* are supplied by:
 - OpenAI (GPT family e.g GPT-4)
 - Anthropic (Claude family e.g Claude 2)
 - Google (Gemini family)
@@ -24,7 +24,7 @@ Github Copilot is the *AI Assitant* and the *LLM's* are supplied by:
 ```text
 .
 ├── .github/
-│   ├── copilot-instructions.md       # References AGENTS.md
+│   ├── copilot-instructions.md        # References AGENTS.md
 │   ├── instructions/                  # Coding standards (HTML, CSS, JS)
 │   ├── prompts/                       # Reusable AI prompts
 │   └── skills/                        # Agent capabilities
@@ -45,4 +45,3 @@ Github Copilot is the *AI Assitant* and the *LLM's* are supplied by:
 - [Sub Agents](https://www.youtube.com/watch?v=anC79mf2YVU&t=14s)
 
 - [Agent Skills](https://www.youtube.com/watch?v=JepVi1tBNEE)
-
