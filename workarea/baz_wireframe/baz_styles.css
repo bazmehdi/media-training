@@ -1,0 +1,103 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Creates the 5px gap between sections */
+}
+
+/* Shared styles for the wireframe box look */
+.box {
+  border: 2px solid #333;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Header */
+header {
+  height: 50px;
+}
+
+/* Navbar */
+nav {
+  height: 25px;
+  font-size: 0.85rem;
+}
+
+/* Main Section */
+main {
+  border: 2px solid #333;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Spacing between the 6 columns */
+}
+
+.grid-item {
+  height: 120px; /* Arbitrary height to match sketch proportions */
+  background-color: #fff;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  border: 2px solid #333;
+  background-color: #eaeaea;
+}
+
+.footer-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #333; /* Inner dividers */
+}
+
+.footer-col:last-child {
+  border-right: none; /* Removes divider on the very last column */
+}
+
+/* Responsive Design for smaller screens (Mobile/Tablets) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack main columns vertically */
+  }
+  
+  footer {
+    grid-template-columns: 1fr; /* Stack footer columns vertically */
+    height: auto;
+  }
+
+  .footer-col {
+    height: 60px;
+    border-right: none;
+    border-bottom: 2px solid #333;
+  }
+
+  .footer-col:last-child {
+    border-bottom: none;
+  }
+}
