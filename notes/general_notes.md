@@ -38,3 +38,9 @@ AI terminology
 ## PRD
 
 A Product Requirements Document (PRD) is an authoritative specification that describes a product or feature’s purpose, scope, user stories, acceptance criteria and measurable success metrics, enabling engineering, design and QA to implement and verify the outcome.
+
+## XAMPP
+
+XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. It is a simple, lightweight Apache distribution that makes it extremely easy for developers to create a local web server for testing and deployment purposes.
+
+[XAMPP](https://www.apachefriends.org/)
