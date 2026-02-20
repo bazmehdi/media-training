@@ -44,3 +44,16 @@ A Product Requirements Document (PRD) is an authoritative specification that des
 XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. It is a simple, lightweight Apache distribution that makes it extremely easy for developers to create a local web server for testing and deployment purposes.
 
 [XAMPP](https://www.apachefriends.org/)
+
+## Agent Skills
+
+- Agent skills are specialised capabilities that extend what an AI coding assistant can do beyond simple text generation. 
+
+- They enable agents to perform concrete actions such as reading and writing files, running terminal commands, searching codebases, and interacting with external tools or APIs. 
+
+- By equipping agents with these skills, they can operate more autonomously and handle complex, multi-step tasks within a development environment like VS Code. 
+
+- In essence, agent skills bridge the gap between a conversational AI and a practical, hands-on programming assistant that can directly modify and manage your project.
+
+- [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [Equipping agents for the real world with Agent Skills](https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills)
