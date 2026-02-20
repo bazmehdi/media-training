@@ -34,11 +34,12 @@ The banners must strictly adhere to the following dimensions and be placed withi
 **User Prompt:** `create banners for gingerbread biscuits using the following image`
 
 **Expected Agent Action:**
-1. Derive a base name for the folders (e.g., `gingerbread-banners`).
+1. Derive a base name for the folders (e.g., `gingerbread_banners`), and add into `workarea/` as its own folder.
 2. Create directories: 
-   - `gingerbread-banners-970x250/`
-   - `gingerbread-banners-300x600/`
-   - `gingerbread-banners-300x250/`
-3. Process the provided image to fit the 970x250 dimension and save the code/asset inside `gingerbread-banners-970x250/`.
-4. Process the provided image to fit the 300x600 dimension and save the code/asset inside `gingerbread-banners-300x600/`.
-5. Process the provided image to fit the 300x250 dimension and save the code/asset inside `gingerbread-banners-300x250/`.
+   - `gingerbread_banners_970x250/`
+   - `gingerbread_banners_300x600/`
+   - `gingerbread_banners_300x250/`
+   and place them inside `workarea/gingerbread_banners/`.
+3. Process the provided image to fit the 970x250 dimension and save the code/asset inside `gingerbread_banners_970x250/`.
+4. Process the provided image to fit the 300x600 dimension and save the code/asset inside `gingerbread_banners_300x600/`.
+5. Process the provided image to fit the 300x250 dimension and save the code/asset inside `gingerbread_banners_300x250/`.

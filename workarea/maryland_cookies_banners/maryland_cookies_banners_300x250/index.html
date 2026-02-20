@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryland Cookies - Chocolate & Caramel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .banner {
+            width: 300px;
+            height: 250px;
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #D2691E 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .tagline {
+            font-size: 11px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            position: relative;
+            max-height: 120px;
+        }
+
+        .image-container img {
+            max-width: 85%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+        }
+
+        .description {
+            font-size: 10px;
+            color: #F5DEB3;
+            text-align: center;
+            line-height: 1.3;
+            margin: 8px 0;
+            z-index: 2;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #8B4513;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 11px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            z-index: 2;
+            margin-top: 4px;
+        }
+
+        .cta-button:hover {
+            background-color: #FFC700;
+            transform: scale(1.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .accent-circle {
+            position: absolute;
+            background-color: rgba(255, 215, 0, 0.15);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .accent-1 {
+            width: 120px;
+            height: 120px;
+            bottom: -40px;
+            right: -30px;
+        }
+
+        .accent-2 {
+            width: 100px;
+            height: 100px;
+            top: -35px;
+            left: -25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="accent-circle accent-1"></div>
+        <div class="accent-circle accent-2"></div>
+
+        <div class="brand">Maryland Cookies</div>
+        <div class="tagline">Choc & Caramel Perfection</div>
+
+        <div class="image-container">
+            <img src="maryland_cookies.jpg" alt="Maryland Cookies">
+        </div>
+
+        <div class="description">
+            Rich. Chocolatey. Caramel Perfection.
+        </div>
+
+        <button class="cta-button">Shop</button>
+    </div>
+</body>
+</html>
