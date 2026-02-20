@@ -57,3 +57,7 @@ XAMPP is a free and open-source cross-platform web server solution stack package
 
 - [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
 - [Equipping agents for the real world with Agent Skills](https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills)
+
+## Gemini CLI GitHub Repository
+
+[Gemini CLI GitHub Repository](https://github.com/google-gemini/gemini-cli/blob/main/README.md)

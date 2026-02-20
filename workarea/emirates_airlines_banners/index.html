@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirates Airlines Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .banner-container {
+            width: 970px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a4d7a 0%, #2d5f8a 100%);
+        }
+
+        /* Background image - blurred extended version for seamless fill */
+        .banner-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('emirates-banner-image.jpg');
+            background-size: 120%;
+            background-position: center 30%;
+            filter: blur(8px);
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        /* Sharp, properly positioned main image */
+        .banner-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            z-index: 2;
+        }
+
+        /* Semi-transparent gradient overlay for text contrast */
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        /* Company name header with glassmorphism effect */
+        .banner-company-name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 4;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            width: fit-content;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .banner-company-name h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Call-to-action tagline */
+        .banner-tagline {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 4;
+            padding: 10px 20px;
+            background: rgba(206, 17, 38, 0.95);
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 15px rgba(206, 17, 38, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .banner-tagline:hover {
+            background-color: rgba(206, 17, 38, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <!-- Blurred background for seamless image extension -->
+        <div class="banner-background"></div>
+
+        <!-- Main banner image with smart positioning -->
+        <img src="emirates-banner-image.jpg" alt="Emirates Airlines Flight Crew" class="banner-image">
+
+        <!-- Overlay for text contrast -->
+        <div class="banner-overlay"></div>
+
+        <!-- Company name header -->
+        <div class="banner-company-name">
+            <h1>Emirates Airlines</h1>
+        </div>
+
+        <!-- Call-to-action tagline -->
+        <div class="banner-tagline">
+            Fly Better
+        </div>
+    </div>
+</body>
+</html>
